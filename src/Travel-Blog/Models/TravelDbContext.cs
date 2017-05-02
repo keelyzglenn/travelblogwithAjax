@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
-
+using TravelBlog.Models;
 
 namespace TravelBlog.Models
 {
@@ -22,6 +22,8 @@ namespace TravelBlog.Models
         public DbSet<People> Peoples { get; set; }
 
         public DbSet<ExperiencePeople> ExperiencesPeoples { get; set; }
+
+        public DbSet<Suggestion> Suggestions { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
