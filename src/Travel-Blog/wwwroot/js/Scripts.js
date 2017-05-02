@@ -15,8 +15,7 @@
         });
     });
 
-    $('.search-bar').submit(function (event) {
-        event.preventDefault();
+    $('.search-input').bind('input', function () {
         console.log("working!")
         $.ajax({
             url: 'Suggestion/Search',
