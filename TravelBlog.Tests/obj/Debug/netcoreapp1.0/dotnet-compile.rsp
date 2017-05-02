@@ -200,6 +200,6 @@
 --reference:C:\Users\epicodus\.nuget\packages\xunit.runner.utility\2.2.0-beta2-build3300\lib\netstandard1.1\xunit.runner.utility.dotnet.dll
 --reference:C:\Users\epicodus\Desktop\TravelBlogNet\src\Travel-Blog\bin\Debug\netcoreapp1.0\Travel-Blog.dll
 C:\Users\epicodus\Desktop\TravelBlogNet\TravelBlog.Tests\Class1.cs
-C:\Users\epicodus\Desktop\TravelBlogNet\TravelBlog.Tests\ISuggestionRepository.cs
 C:\Users\epicodus\Desktop\TravelBlogNet\TravelBlog.Tests\ControllerTests\SuggestionControllerTests.cs
+C:\Users\epicodus\Desktop\TravelBlogNet\TravelBlog.Tests\Models\TestDbContext.cs
 C:\Users\epicodus\Desktop\TravelBlogNet\TravelBlog.Tests\Properties\AssemblyInfo.cs
