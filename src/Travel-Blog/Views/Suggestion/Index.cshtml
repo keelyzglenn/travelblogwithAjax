@@ -1,5 +1,33 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@model IEnumerable<TravelBlog.Models.Suggestion>
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Suggestions</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="~/js/Scripts.js"></script>
+</head>
+<body>
+    @model IEnumerable<TravelBlog.Models.Suggestion>
+    <h2>Add suggestion</h2>
+    <form action="Create" class="new-suggestion">
+        <label for="newDestination">Destination:</label>
+        <input type="text" name="newDestination" />
+        <label for="newDescription"> Description:</label>
+        <input type="text" name="newDescription" />
+        <button type="submit" >Submit</button>
+    </form>
 
+    <ul id="suggestion-list">
+        @foreach (var suggestion in Model)
+        {
+            <p>@Html.DisplayFor(modelSuggestion => suggestion.Destination)</p>
+
+        }
+    </ul>
+
+
+    <h2>Get Test</h2>
+    <h4 class="hello-ajax" data-request-url='@Url.Action("HelloAjax", "Suggestion")'>Hello</h4>
+    <div id="result1"></div>
+
+</body>
+</html>

@@ -28,12 +28,14 @@ namespace TravelBlog
             services.AddEntityFramework()
                 .AddDbContext<TravelDbContext>(options =>
                     options.UseSqlServer(Configuration["ConnectionStrings:DefaultConnection"]));
+            services.AddEntityFramework()
+              .AddEntityFrameworkSqlServer();
         }
 
 
         public void Configure(IApplicationBuilder app)
         {
-
+            app.UseStaticFiles();
             app.UseMvc(routes =>
             {
                 routes.MapRoute(

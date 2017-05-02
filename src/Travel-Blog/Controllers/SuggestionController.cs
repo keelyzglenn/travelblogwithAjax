@@ -24,12 +24,18 @@ namespace TravelBlog.Controllers
                 this.suggestionRepo = thisRepo;
             }
         }
+
         
 
         // GET: /<controller>/
         public IActionResult Index()
         {
             return View(suggestionRepo.Suggestions.ToList());
+        }
+
+        public IActionResult HelloAjax()
+        {
+            return Content("Hello from the controller!", "text/plain");
         }
 
         [HttpPost]

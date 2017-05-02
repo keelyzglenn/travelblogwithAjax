@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v1.0",
-    "signature": "6177ce38cb807853f3279531f7b467c2de933677"
+    "signature": "5c74fe47f1bd27580aca5768e789989587d4eae8"
   },
   "compilationOptions": {},
   "targets": {
@@ -420,6 +420,18 @@
         },
         "runtime": {
           "lib/netstandard1.3/Microsoft.AspNetCore.Server.Kestrel.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.StaticFiles/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Hosting.Abstractions": "1.0.0",
+          "Microsoft.AspNetCore.Http.Extensions": "1.0.0",
+          "Microsoft.Extensions.FileProviders.Abstractions": "1.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "1.0.0",
+          "Microsoft.Extensions.WebEncoders": "1.0.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.AspNetCore.StaticFiles.dll": {}
         }
       },
       "Microsoft.AspNetCore.WebUtilities/1.0.0": {
@@ -989,7 +1001,8 @@
           "Microsoft.Extensions.Configuration.FileExtensions": "1.0.0",
           "Microsoft.Extensions.Configuration.Json": "1.0.0",
           "Microsoft.AspNetCore.Mvc": "1.0.1",
-          "Microsoft.AspNetCore.Mvc.Core": "1.0.1"
+          "Microsoft.AspNetCore.Mvc.Core": "1.0.1",
+          "Microsoft.AspNetCore.StaticFiles": "1.0.0"
         },
         "runtime": {
           "Travel-Blog.dll": {}
@@ -1197,6 +1210,11 @@
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-GrTVDsRR6j2WrrTuNsZkG1R8aV1UbsA8TKUD+MKVSpXIoEpQNryCT181Zu94CARowQwFQdW4Q1DwfO4FdAhXiQ=="
+    },
+    "Microsoft.AspNetCore.StaticFiles/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pXiUBJtpO0fIlGEg/ESykhbIZ2+I+9Y+3qXzN19zZDDF+tD88eATg3A5MHMXu/VmqaROLfvpGJmJ6uOLUGsBVQ=="
     },
     "Microsoft.AspNetCore.WebUtilities/1.0.0": {
       "type": "package",
