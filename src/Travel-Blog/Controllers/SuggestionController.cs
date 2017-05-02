@@ -45,5 +45,10 @@ namespace TravelBlog.Controllers
             suggestionRepo.Save(newSuggestion);
             return Json(newSuggestion);
         } 
+
+        public IActionResult Search(string newSearch)
+        {
+            return Json(suggestionRepo.Search(newSearch));
+        }
     }
 }

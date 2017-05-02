@@ -7,6 +7,19 @@
 </head>
 <body>
     @model IEnumerable<TravelBlog.Models.Suggestion>
+
+    <h1>Search</h1>
+    <form action="Search" class="search-bar">
+        <input type="text" name="newSearch" />
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="search-result">
+
+    </div>
+
+
+
     <h2>Add suggestion</h2>
     <form action="Create" class="new-suggestion">
         <label for="newDestination">Destination:</label>
@@ -26,7 +39,7 @@
 
 
     <h2>Get Test</h2>
-    <h4 class="hello-ajax" data-request-url='@Url.Action("HelloAjax", "Suggestion")'>Hello</h4>
+    <h4 class="hello-ajax">Hello</h4>
     <div id="result1"></div>
 
 </body>

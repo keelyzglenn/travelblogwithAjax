@@ -51,5 +51,10 @@ namespace TravelBlog.Models
             db.Database.ExecuteSqlCommand("delete from Suggestions");
         }
 
+        public IEnumerable<Suggestion> Search(string newSearch)
+        {
+            return db.Suggestions.Where(x => x.Destination == newSearch).ToList();
+        }
+
     }
 }
