@@ -20,7 +20,7 @@ namespace TravelBlog.Models
         {
 
         }
-        public Suggestion(string destination, string description, int upvote, int id =0)
+        public Suggestion(string destination, string description, int upvote=0, int id =0)
         {
             Destination = destination;
             Description = description;

@@ -34,5 +34,22 @@ namespace TravelBlog.Models
             db.SaveChanges();
         }
 
+        public EFSuggestionRepository(TravelDbContext connection = null)
+        { 
+            if (connection == null)
+            {
+                this.db = new TravelDbContext();
+            }
+            else
+            {
+                this.db = connection;
+            }
+        }
+
+        public void DeleteAll()
+        {
+            db.Database.ExecuteSqlCommand("delete from Suggestions");
+        }
+
     }
 }

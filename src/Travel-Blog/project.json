@@ -17,7 +17,8 @@
       "type": "build"
     },
     "Microsoft.AspNetCore.Mvc": "1.0.1",
-    "System.ComponentModel.Annotations": "4.1.0"
+    "System.ComponentModel.Annotations": "4.1.0",
+    "Microsoft.AspNetCore.Mvc.Core": "1.0.1"
   },
 
   "tools": {

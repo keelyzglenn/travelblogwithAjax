@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using TravelBlog.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 // For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace TravelBlog.Controllers
@@ -30,5 +31,13 @@ namespace TravelBlog.Controllers
         {
             return View(suggestionRepo.Suggestions.ToList());
         }
+
+        [HttpPost]
+        public IActionResult Create(string newDestination, string newDescription)
+        {
+            Suggestion newSuggestion = new Suggestion(newDestination, newDescription);
+            suggestionRepo.Save(newSuggestion);
+            return Json(newSuggestion);
+        } 
     }
 }
